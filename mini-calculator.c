@@ -2,6 +2,7 @@
 int main()
 {
     int a,b,choice;
+    float div;
     printf("   MENU   \n");
     printf("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n");
     printf("Enter your choice:");
@@ -13,20 +14,21 @@ int main()
     switch(choice)
     {
         case 1:
-        printf("a+b=%d\n",a+b);
-        break;
+            printf("a+b=%d\n",a+b);
+            break;
         case 2:
-        printf("a-b=%d\n",a-b);
-        break;
+            printf("a-b=%d\n",a-b);
+            break;
         case 3:
-        printf("a*b=%d\n",a*b);
-        break;
+            printf("a*b=%d\n",a*b);
+            break;
         case 4:
-        printf("a/b=%f\n",a/b);
-        break;
+            div=a/b;
+            printf("a/b=%.2f\n",div);
+            break;
         default:
-        printf("Try again!\n");
-        break;
+            printf("Try again!\n");
+            break;
     }
     return 0;
 }
